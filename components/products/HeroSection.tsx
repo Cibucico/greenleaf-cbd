@@ -1,54 +1,67 @@
 import Link from 'next/link'
-import { Leaf } from 'lucide-react'
+import { Leaf, ArrowRight } from 'lucide-react'
 
 export function HeroSection() {
   return (
-    <section className="bg-gradient-to-br from-brand-50 via-white to-brand-100">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          {/* Text */}
-          <div>
-            <span className="inline-flex items-center gap-1.5 text-brand-600 text-sm font-semibold uppercase tracking-widest mb-4">
-              <Leaf size={14} />
+    <section className="relative overflow-hidden bg-surface-400 border-b border-border">
+      {/* Background texture */}
+      <div className="absolute inset-0 opacity-5"
+        style={{ backgroundImage: 'radial-gradient(circle at 20% 50%, #c9a84c 0%, transparent 50%), radial-gradient(circle at 80% 20%, #2d5a27 0%, transparent 40%)' }}
+      />
+
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 md:py-36">
+        <div className="max-w-2xl">
+          {/* Eyebrow */}
+          <div className="flex items-center gap-2 mb-6">
+            <div className="w-5 h-0.5 bg-gold-500" />
+            <span className="text-gold-500 text-xs font-semibold uppercase tracking-widest">
               Premium CBD Products
             </span>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-zinc-900 leading-tight">
-              Natural Wellness,{' '}
-              <span className="text-brand-600">Crafted with Care</span>
-            </h1>
-            <p className="mt-5 text-lg text-zinc-600 max-w-lg">
-              Explore our curated range of lab-tested CBD oils, edibles, and drinks.
-              Simple ingredients. Real results. Sourced right here in South Africa.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-4">
-              <Link
-                href="/products"
-                className="inline-flex items-center justify-center rounded-full bg-brand-500 hover:bg-brand-600 text-white font-semibold px-8 py-3 transition-colors duration-150"
-              >
-                Shop Products
-              </Link>
-              <Link
-                href="/about"
-                className="inline-flex items-center justify-center rounded-full border-2 border-brand-500 text-brand-600 hover:bg-brand-50 font-semibold px-8 py-3 transition-colors duration-150"
-              >
-                Learn About Us
-              </Link>
-            </div>
           </div>
 
-          {/* Decorative illustration */}
-          <div className="hidden md:flex items-center justify-center">
-            <div className="relative w-80 h-80 rounded-full bg-brand-100 flex items-center justify-center">
-              <div className="absolute inset-4 rounded-full bg-brand-200 opacity-50" />
-              <div className="absolute inset-10 rounded-full bg-brand-300 opacity-30" />
-              <Leaf
-                size={140}
-                strokeWidth={0.8}
-                className="text-brand-600 relative z-10"
-              />
-            </div>
+          {/* Headline */}
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-stone-50 leading-[1.05] tracking-tight">
+            Nature&apos;s Best.{' '}
+            <span className="text-gold-400">Lab Tested.</span>{' '}
+            South African.
+          </h1>
+
+          <p className="mt-6 text-lg text-stone-400 leading-relaxed max-w-lg">
+            Oils, edibles, and drinks — every product crafted with premium hemp,
+            third-party tested, and delivered across South Africa.
+          </p>
+
+          <div className="mt-10 flex flex-wrap gap-4">
+            <Link
+              href="/products"
+              className="inline-flex items-center gap-2 rounded-full bg-gold-500 hover:bg-gold-600 text-surface-400 font-semibold px-8 py-3.5 text-sm tracking-wide transition-colors duration-150"
+            >
+              Shop Now
+              <ArrowRight size={16} />
+            </Link>
+            <Link
+              href="/about"
+              className="inline-flex items-center gap-2 rounded-full border border-stone-700 text-stone-300 hover:border-gold-500 hover:text-gold-400 font-semibold px-8 py-3.5 text-sm tracking-wide transition-colors duration-150"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+          {/* Trust badges */}
+          <div className="mt-12 flex flex-wrap gap-6 text-xs text-stone-500">
+            {['Lab Tested', 'Natural Ingredients', 'SA Sourced', 'Fast Delivery'].map((t) => (
+              <div key={t} className="flex items-center gap-1.5">
+                <Leaf size={12} className="text-gold-600" />
+                {t}
+              </div>
+            ))}
           </div>
         </div>
+      </div>
+
+      {/* Corner accent */}
+      <div className="absolute right-0 top-0 w-64 h-64 md:w-96 md:h-96 opacity-10 flex items-center justify-center">
+        <Leaf size={280} strokeWidth={0.5} className="text-gold-500 translate-x-1/4 -translate-y-1/4" />
       </div>
     </section>
   )

@@ -5,35 +5,39 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-brand-900 text-white">
+    <footer className="bg-surface-400 border-t border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Brand */}
+          {/* Logo + tagline */}
           <div>
-            <div className="flex items-center gap-2 mb-3">
-              <Leaf size={20} strokeWidth={1.8} className="text-brand-300" />
-              <span className="font-bold text-lg">GreenLeaf CBD</span>
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="w-8 h-8 rounded-full bg-gold-500/10 border border-gold-500/30 flex items-center justify-center">
+                <Leaf size={16} strokeWidth={1.8} className="text-gold-500" />
+              </div>
+              <span className="text-gold-400 font-semibold text-sm tracking-widest uppercase">
+                CBD Store
+              </span>
             </div>
-            <p className="text-brand-200 text-sm leading-relaxed">
+            <p className="text-stone-500 text-sm leading-relaxed">
               Premium, lab-tested CBD products crafted for your natural wellness journey.
+              South Africa sourced.
             </p>
           </div>
 
-          {/* Quick links */}
+          {/* Links */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-widest text-brand-300 mb-4">
-              Quick Links
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">
+              Navigate
             </h3>
-            <ul className="space-y-2 text-sm text-brand-100">
+            <ul className="space-y-2 text-sm text-stone-400">
               {[
                 { href: '/',         label: 'Home' },
                 { href: '/products', label: 'Products' },
-                { href: '/about',    label: 'About Us' },
-                { href: '/about',    label: 'Contact' },
-              ].map((link) => (
-                <li key={link.label}>
-                  <Link href={link.href} className="hover:text-white transition-colors">
-                    {link.label}
+                { href: '/about',    label: 'Contact Us' },
+              ].map((l) => (
+                <li key={l.href}>
+                  <Link href={l.href} className="hover:text-gold-400 transition-colors">
+                    {l.label}
                   </Link>
                 </li>
               ))}
@@ -42,35 +46,37 @@ export function Footer() {
 
           {/* Contact */}
           <div>
-            <h3 className="font-semibold text-sm uppercase tracking-widest text-brand-300 mb-4">
-              Contact Us
+            <h3 className="text-xs font-semibold uppercase tracking-widest text-gold-600 mb-4">
+              Get in Touch
             </h3>
-            <ul className="space-y-3 text-sm text-brand-100">
+            <ul className="space-y-3 text-sm text-stone-400">
               <li>
                 <a
                   href="https://wa.me/27000000000"
-                  className="flex items-center gap-2 hover:text-white transition-colors"
+                  className="flex items-center gap-2 hover:text-gold-400 transition-colors"
                 >
-                  <MessageCircle size={15} />
+                  <MessageCircle size={14} />
                   +27 000 000 0000
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:hello@greenleafcbd.co.za"
-                  className="flex items-center gap-2 hover:text-white transition-colors"
+                  href="mailto:hello@cbdstore.co.za"
+                  className="flex items-center gap-2 hover:text-gold-400 transition-colors"
                 >
-                  <Mail size={15} />
-                  hello@greenleafcbd.co.za
+                  <Mail size={14} />
+                  hello@cbdstore.co.za
                 </a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="mt-10 pt-6 border-t border-brand-800 text-center text-xs text-brand-400">
-          © {year} GreenLeaf CBD. All rights reserved. CBD products are not intended to diagnose,
-          treat, cure or prevent any disease.
+        <div className="mt-10 pt-6 border-t border-border text-center text-xs text-stone-600">
+          © {year} CBD Store. All rights reserved.{' '}
+          <span className="block sm:inline mt-1 sm:mt-0 sm:ml-2">
+            CBD products are not intended to diagnose, treat, cure or prevent any disease.
+          </span>
         </div>
       </div>
     </footer>

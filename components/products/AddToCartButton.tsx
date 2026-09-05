@@ -26,26 +26,18 @@ export function AddToCartButton({ product, size = 'lg', className }: AddToCartBu
     <button
       onClick={handleClick}
       className={cn(
-        'inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-colors duration-150',
-        size === 'lg'
-          ? 'px-8 py-3 text-base'
-          : 'px-5 py-2 text-sm',
+        'inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-all duration-150 text-xs uppercase tracking-widest',
+        size === 'lg' ? 'px-8 py-3.5' : 'px-4 py-2',
         added
-          ? 'bg-brand-700 text-white'
-          : 'bg-brand-500 hover:bg-brand-600 text-white',
+          ? 'bg-emerald-600 text-white'
+          : 'bg-gold-500/10 border border-gold-500/40 text-gold-400 hover:bg-gold-500 hover:text-surface-400 hover:border-gold-500',
         className,
       )}
     >
       {added ? (
-        <>
-          <Check size={size === 'lg' ? 18 : 15} />
-          Added!
-        </>
+        <><Check size={13} /> Added</>
       ) : (
-        <>
-          <ShoppingCart size={size === 'lg' ? 18 : 15} />
-          Add to Cart
-        </>
+        <><ShoppingCart size={13} /> Add to Cart</>
       )}
     </button>
   )

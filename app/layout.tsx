@@ -9,8 +9,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'GreenLeaf CBD',
-    template: '%s | GreenLeaf CBD',
+    default: 'CBD Store',
+    template: '%s | CBD Store',
   },
   description:
     'Premium CBD oils, edibles, and drinks. Natural wellness products crafted with care, lab-tested and South Africa-sourced.',

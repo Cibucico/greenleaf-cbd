@@ -6,10 +6,10 @@ import type { ProductCategory } from '@/data/products'
 type FilterOption = { label: string; value: ProductCategory | 'all' }
 
 const OPTIONS: FilterOption[] = [
-  { label: 'All Products', value: 'all' },
-  { label: 'Oils',         value: 'oils' },
-  { label: 'Edibles',      value: 'edibles' },
-  { label: 'Drinks',       value: 'drinks' },
+  { label: 'All',     value: 'all' },
+  { label: 'Oils',    value: 'oils' },
+  { label: 'Edibles', value: 'edibles' },
+  { label: 'Drinks',  value: 'drinks' },
 ]
 
 interface CategoryFilterProps {
@@ -27,10 +27,10 @@ export function CategoryFilter({ selected, onChange }: CategoryFilterProps) {
           aria-selected={selected === opt.value}
           onClick={() => onChange(opt.value)}
           className={cn(
-            'px-5 py-2 rounded-full text-sm font-medium transition-colors duration-150 border',
+            'px-5 py-2 rounded-full text-xs font-semibold uppercase tracking-widest border transition-colors duration-150',
             selected === opt.value
-              ? 'bg-brand-600 text-white border-brand-600'
-              : 'bg-white text-zinc-600 border-zinc-200 hover:border-brand-400 hover:text-brand-700',
+              ? 'bg-gold-500 text-surface-400 border-gold-500'
+              : 'bg-transparent text-stone-400 border-border hover:border-gold-500/50 hover:text-gold-400',
           )}
         >
           {opt.label}
