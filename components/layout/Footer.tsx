@@ -15,7 +15,7 @@ export function Footer() {
                 <Leaf size={16} strokeWidth={1.8} className="text-gold-500" />
               </div>
               <span className="text-gold-400 font-semibold text-sm tracking-widest uppercase">
-                CBD Store
+                Sodaze
               </span>
             </div>
             <p className="text-stone-500 text-sm leading-relaxed">
@@ -52,11 +52,11 @@ export function Footer() {
             <ul className="space-y-3 text-sm text-stone-400">
               <li>
                 <a
-                  href="https://wa.me/27000000000"
+                  href="https://wa.me/27609609830"
                   className="flex items-center gap-2 hover:text-gold-400 transition-colors"
                 >
                   <MessageCircle size={14} />
-                  +27 000 000 0000
+                  +27 60 960 9830
                 </a>
               </li>
               <li>
@@ -73,7 +73,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-border text-center text-xs text-stone-600">
-          © {year} CBD Store. All rights reserved.{' '}
+          © {year} Sodaze. All rights reserved.{' '}
           <span className="block sm:inline mt-1 sm:mt-0 sm:ml-2">
             CBD products are not intended to diagnose, treat, cure or prevent any disease.
           </span>

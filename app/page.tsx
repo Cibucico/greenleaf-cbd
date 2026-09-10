@@ -101,7 +101,7 @@ export default function HomePage() {
             </p>
           </div>
           <a
-            href="https://wa.me/27000000000"
+            href="https://wa.me/27609609830"
             target="_blank"
             rel="noopener noreferrer"
             className="flex-shrink-0 inline-flex items-center justify-center gap-2 rounded-full bg-gold-500 hover:bg-gold-600 text-surface-400 font-semibold px-8 py-3 text-sm uppercase tracking-widest transition-colors"

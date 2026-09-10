@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: 'Get in touch to place an order or ask a question about our CBD products.',
 }
 
-const waLink = `https://wa.me/27000000000?text=${encodeURIComponent('Hi! I have a question about your CBD products.')}`
+const waLink = `https://wa.me/27609609830?text=${encodeURIComponent('Hi! I have a question about your CBD products.')}`
 
 export default function AboutPage() {
   return (
@@ -79,7 +79,7 @@ export default function AboutPage() {
             </div>
             <div>
               <p className="font-semibold text-stone-200 text-sm">WhatsApp</p>
-              <p className="text-xs text-stone-500 mt-0.5">+27 000 000 0000</p>
+              <p className="text-xs text-stone-500 mt-0.5">+27 60 960 9830</p>
             </div>
             <span className="text-xs text-gold-500 font-medium group-hover:underline">Chat now →</span>
           </a>

@@ -3,7 +3,7 @@ import { CartView } from './CartView'
 
 export const metadata: Metadata = {
   title: 'Cart',
-  description: 'Review your CBD Store order.',
+  description: 'Review your Sodaze order.',
 }
 
 export default function CartPage() {

@@ -50,7 +50,7 @@ export async function POST(req: NextRequest) {
         email_address:    email,
         m_payment_id,
         amount:           amountRands,
-        item_name:        'CBD Store Order',
+        item_name:        'Sodaze Order',
         item_description: itemSummary.slice(0, 255),
       },
       passphrase,

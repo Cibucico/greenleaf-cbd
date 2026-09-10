@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: 'Online checkout coming soon — order via WhatsApp or email in the meantime.',
 }
 
-const waLink = `https://wa.me/27000000000?text=${encodeURIComponent('Hi! I would like to place an order. Please let me know how to proceed.')}`
+const waLink = `https://wa.me/27609609830?text=${encodeURIComponent('Hi! I would like to place an order. Please let me know how to proceed.')}`
 
 export default function CheckoutPage() {
   return (

@@ -27,7 +27,7 @@ export default function ProductDetailPage({ params }: Props) {
   const waMessage = encodeURIComponent(
     `Hi! I'd like to order: ${product.name} (${product.priceDisplay}). Please let me know how to proceed.`,
   )
-  const waLink = `https://wa.me/27000000000?text=${waMessage}`
+  const waLink = `https://wa.me/27609609830?text=${waMessage}`
 
   return (
     <div className="section-container section-padding">

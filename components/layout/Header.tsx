@@ -28,7 +28,7 @@ export function Header() {
             <Leaf size={18} strokeWidth={1.8} className="text-gold-500" />
           </div>
           <span className="text-gold-400 font-semibold text-sm tracking-widest uppercase">
-            CBD Store
+            Sodaze
           </span>
         </Link>
 

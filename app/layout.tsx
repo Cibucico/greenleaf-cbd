@@ -9,12 +9,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'CBD Store',
-    template: '%s | CBD Store',
+    default: 'Sodaze',
+    template: '%s | Sodaze',
   },
   description:
-    'Premium CBD oils, edibles, and drinks. Natural wellness products crafted with care, lab-tested and South Africa-sourced.',
-  keywords: ['CBD', 'hemp', 'wellness', 'CBD oil', 'CBD gummies', 'CBD drinks', 'South Africa'],
+    'Sodaze — premium CBD oils, edibles, and drinks. Natural wellness products crafted with care, lab-tested and South Africa-sourced.',
+  keywords: ['Sodaze', 'CBD', 'hemp', 'wellness', 'CBD oil', 'CBD gummies', 'CBD drinks', 'South Africa'],
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
