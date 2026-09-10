@@ -21,14 +21,14 @@ export function HeroSection() {
 
           {/* Headline */}
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-stone-50 leading-[1.05] tracking-tight">
-            Nature&apos;s Best.{' '}
-            <span className="text-gold-400">Lab Tested.</span>{' '}
-            South African.
+            Craft Cannabis.{' '}
+            <span className="text-gold-400">Cape Town Made.</span>{' '}
+            SA Delivered.
           </h1>
 
           <p className="mt-6 text-lg text-stone-400 leading-relaxed max-w-lg">
-            Oils, edibles, and drinks — every product crafted with premium hemp,
-            third-party tested, and delivered across South Africa.
+            Official Sodaze reseller — craft sodas, gummies, fudge, and premium CBD oils.
+            Real ingredients, no artificial additives, lab-tested and delivered nationwide.
           </p>
 
           <div className="mt-10 flex flex-wrap gap-4">

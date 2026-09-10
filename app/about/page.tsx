@@ -16,10 +16,10 @@ export default function AboutPage() {
         <p className="text-gold-500 text-xs font-semibold uppercase tracking-widest mb-3">
           About Us
         </p>
-        <h1 className="text-3xl md:text-4xl text-stone-100">Premium CBD, Delivered.</h1>
+        <h1 className="text-3xl md:text-4xl text-stone-100">Sodaze, Delivered to Your Door.</h1>
         <div className="w-12 h-0.5 bg-gold-500 mt-4 mb-5" />
         <p className="text-stone-400 text-lg leading-relaxed">
-          We believe wellness should be accessible, honest, and rooted in nature.
+          We bring Cape Town&rsquo;s finest cannabis lifestyle brand straight to you — craft sodas, gummies, fudge, and premium CBD oils.
         </p>
       </div>
 
@@ -27,14 +27,14 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-20">
         <div className="space-y-4 text-stone-400 text-sm leading-relaxed">
           <p>
-            We started with a simple mission: bring genuinely high-quality CBD products to
-            South Africans without the confusion and inflated prices. Every product we carry
-            is sourced from trusted, sustainable suppliers and third-party tested before it
-            reaches you.
+            We are an authorised reseller of Sodaze — the Cape Town-based cannabis lifestyle
+            brand that crafts premium sodas, gummies, fudge, and edibles using real fruit,
+            South African cannabis extracts, and zero artificial colorants or preservatives.
           </p>
           <p>
-            No shortcuts. No hidden ingredients. Just clean, effective CBD in forms you love —
-            oils, edibles, and drinks — all compliant with South African regulations.
+            Alongside the full Sodaze range, we stock carefully selected CBD oils sourced from
+            trusted local suppliers. Every product is lab-tested and compliant with South
+            African regulations — so you always know exactly what you are getting.
           </p>
           <p>
             We are a small, passionate team and we answer every message personally. Whether

@@ -68,9 +68,9 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {[
-              { label: 'CBD Oils',    desc: '2 products',  href: '/products?cat=oils',    icon: '🌿' },
-              { label: 'Edibles',     desc: '4 products',  href: '/products?cat=edibles', icon: '🍫' },
-              { label: 'CBD Drinks',  desc: '3 products',  href: '/products?cat=drinks',  icon: '🥤' },
+              { label: 'CBD Oils',       desc: '2 products',  href: '/products?cat=oils',    icon: '🌿' },
+              { label: 'Edibles',        desc: '4 products',  href: '/products?cat=edibles', icon: '🍬' },
+              { label: 'Sodaze Sodas',   desc: '3 flavours',  href: '/products?cat=drinks',  icon: '🥤' },
             ].map((cat) => (
               <Link
                 key={cat.label}
